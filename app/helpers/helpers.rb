@@ -1,7 +1,7 @@
 class Helpers
 
   def self.current_user(session)
-    @user = User.find_by(id: session[:user_id])
+    @current_user = User.find_by(id: session[:user_id])
     # binding.pry
 #     [1] pry(Helpers)> @user
 # => #<User:0x000000040de5b8
