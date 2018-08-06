@@ -9,7 +9,7 @@
     <% if Helpers.is_logged_in?(session) %>
       <!-- <h2>Welcome <%= Helpers.current_user(session).username %> </h2> -->
       <% @user = Helpers.current_user(session) %>
-        <h2>Welcome <%= @user.username %>
+        <h2>Welcome <%= session[:username] %>
          </h2>
     <% else %>
       <a href="/">Home Page</a>
