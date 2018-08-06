@@ -12,7 +12,7 @@
         <h2>Welcome <%= session[:username] %>
          </h2>
          <h3>Balance: <%= @current_user.balance %></h3>
-         binding.pry
+         <% binding.pry %>
     <% else %>
       <a href="/">Home Page</a>
     <p><a href="/logout">Log Out</a></p>
