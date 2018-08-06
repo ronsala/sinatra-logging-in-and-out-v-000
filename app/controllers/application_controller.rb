@@ -16,8 +16,6 @@ class ApplicationController < Sinatra::Base
     binding.pry
     if @user && @user.password ==
       session[:user_id] = @user.id
-      session[:username] = @user.username
-      session[:password] = @user.password
       redirect to '/account'
     else
       redirect to '/error'
